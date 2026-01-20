@@ -28,7 +28,7 @@ SELECT user();
 //crear base de datos
 create database ecommerce;
 
-
+mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\backup_ecommerce.sql
 
 
 
