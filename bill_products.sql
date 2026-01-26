@@ -1,3 +1,5 @@
+use ecommerce_jginez;
+
 insert ignore into bill_products(bill_id,product_id,date_added,quantity,price,discount) values  ('13', '1599', '2024-04-18 01:17:45', '7', '2825.28', '10');
 insert ignore into bill_products(bill_id,product_id,date_added,quantity,price) values  ('6', '233', '2024-10-01 22:38:13', '19', '3597.27');
 insert ignore into bill_products(bill_id,product_id,date_added,quantity,price,discount) values  ('10', '1516', '2024-12-08 01:23:28', '9', '3305.04', '15');

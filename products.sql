@@ -1,3 +1,5 @@
+use ecommerce_jginez;
+
 insert ignore into products(sku,name,slug,description,price) values
 ('3401885628391', 'Heavy Duty Steel Computer', 'heavy-duty-steel-computer', 'Recusandae quo qui nulla labore quos nam vel. Et molestiae nesciunt recusandae eveniet. Amet possimus quam non adipisci unde blanditiis voluptas.', '418.89'),
 ('1806788828411', 'Practical Copper Bench', 'practical-copper-bench', 'Tempore libero ea sint nemo tempore amet. Repellat officia delectus quo distinctio nesciunt. Quis nesciunt beatae neque libero molestiae nihil.', '4959.32'),

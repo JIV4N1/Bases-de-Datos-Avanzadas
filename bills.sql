@@ -1,3 +1,5 @@
+use ecommerce_jginez;
+
 insert ignore into bills(bill_id,client_id) values  (1,'89743');
 insert ignore into bills(bill_id,client_id) values  (2,'91577');
 insert ignore into bills(bill_id,client_id) values  (3,'46843');

@@ -28,8 +28,35 @@ SELECT user();
 //crear base de datos
 create database ecommerce;
 
-mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\backup_ecommerce.sql
+#Insertar registros por medio de un archivo .sql
 
+mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\clients.sql 
+mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\products.sql 
+mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\bills.sql 
+mysql -u jginez -p < C:\Users\Usuario\OneDrive\Desktop\BDA\bill_products.sql 
+
+
+
+#Consultas eficases
+select * from clients;
+
+#Consultas eficientes 
+select count(*) from clients;
+select * from clients limit 10;
+select * from clients WHERE email='alba93@osinski.org';
+
+select name as 'Nombre del Cliente', email as 'Correo del cliente' from clients WHERE email='alba93@osinski.org';
+
+Las '' para nombres compuestos, tambien se puede select name as Cliente, email as 'Correo del cliente' from clients WHERE email='alba93@osinski.org';
+
+#Select me regrese al menos un resultado; no cero,
+select * from clients
+    where email=select*from bill_product
+        where email = select * from bill_product
+            WHERE email='alba93@osinski.org'
+
+
+inner join
 
 
 
